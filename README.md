@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # Hyper-Local Resource Mapper (Web Version)
 
 ## 🗺️ About the Project
