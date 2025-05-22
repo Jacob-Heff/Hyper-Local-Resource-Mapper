@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper-Local Resource Mapper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗺️ Hyper-Local Resource Mapper</h1>
+        <p class="tagline">Your personal guide to the hidden gems in your world.</p>
+
+        <section class="add-resource">
+            <h2>Add New Resource</h2>
+            <div class="form-group">
+                <label for="resourceName">Resource Name:</label>
+                <input type="text" id="resourceName" placeholder="e.g., Quiet Bench" required>
+            </div>
+            <div class="form-group">
+                <label for="resourceCategory">Category:</label>
+                <input type="text" id="resourceCategory" placeholder="e.g., Shade Spot, Neighbor Contact">
+            </div>
+            <div class="form-group">
+                <label for="resourceLocation">Descriptive Location:</label>
+                <input type="text" id="resourceLocation" placeholder="e.g., Near red mailbox">
+            </div>
+            <div class="form-group">
+                <label for="resourceNotes">Notes:</label>
+                <textarea id="resourceNotes" placeholder="e.g., Good for reading in summer"></textarea>
+            </div>
+            <button id="addResourceBtn">Add Resource</button>
+        </section>
+
+        <hr>
+
+        <section class="view-resources">
+            <h2>Your Mapped Resources</h2>
+            <div class="filter-group">
+                <label for="filterCategory">Filter by Category:</label>
+                <input type="text" id="filterCategory" placeholder="e.g., Shade Spot">
+                <button id="filterBtn">Filter</button>
+            </div>
+            <div id="resourceList">
+                <p>No resources added yet. Start mapping your world!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
